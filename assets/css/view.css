@@ -1,0 +1,59 @@
+   a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        .mini-bar {
+            background-color: #f2f2f2;
+        }
+
+
+        .mini-bar ul li a {
+            font-size: 12px;
+            font-weight: 600;
+            border-right: 1px solid rgb(80, 78, 78);
+            padding-right: 12px;
+
+        }
+
+        .mega-menu {
+            position: fixed;
+            /* <-- IMPORTANT */
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80px;
+            /* navbar height */
+            width: 1200px;
+            background: #fff;
+            padding: 50px 60px;
+            display: none;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+            z-index: 3000;
+        }
+
+        .nav-item:hover .mega-menu {
+            display: block;
+        }
+
+        .mega-menu h6 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .mega-menu .col-3 {
+            padding: 0 25px;
+            /* columns gap */
+        }
+
+        .mega-menu ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }

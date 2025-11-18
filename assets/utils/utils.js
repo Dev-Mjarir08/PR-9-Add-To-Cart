@@ -1,7 +1,7 @@
 let bas_url = window.location.href;
 let preFix ="";
 if (bas_url.includes("index")){
-    preFix = "./assets/pages/"
+    preFix = "/assets/pages/"
 }
     else{
         preFix=""

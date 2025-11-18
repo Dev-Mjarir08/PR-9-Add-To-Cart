@@ -1,12 +1,18 @@
 let bas_url = window.location.href;
-let preFix ="";
-if (bas_url.includes("index")){
-    preFix = "/assets/pages/"
-}
-    else{
-        preFix=""
-    }
+let preFix = "";
 
+if (bas_url.includes("vercel.app")) {
+    // VERCEL
+    preFix = "/assets/pages/";
+} 
+else if (bas_url.includes("index")) {
+    // LOCAL INDEX PAGE
+    preFix = "./assets/pages/";
+} 
+else {
+    // LOCAL PAGES FOLDER
+    preFix = "";
+}
     let nav =`
        <nav class="navbar navbar-expand-lg bg-white border-bottom p-3">
         <div class="container">
